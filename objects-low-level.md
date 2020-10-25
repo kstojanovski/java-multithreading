@@ -40,7 +40,7 @@ Derivate class on this interface include:
   * Starts the run method where the main logic is placed. Should be invoked directly but only via tha start method if used as multithreading method.
 * static void yield()
   * A hint to the scheduler that the current thread is willing to yield its current use of a processor.
-    * Thread which is using this method gives advantage in the processing to the other threads but doesnt stops!
+    * Thread which is using this method gives advantage in the processing to the other threads but it doesnt stops!
 * void join()
   * Waits for this thread to die.
 * void	join(long millis)
