@@ -43,6 +43,7 @@ Derivate class on this interface include:
     * Thread which is using this method gives advantage in the processing to the other threads but it doesnt stops!
 * void join()
   * Waits for this thread to die.
+    * The current thread where `t.join` (`t` for some thread object reference) is invoked waits for the thread (for the process which was started in the run method) `t` to finish.  
 * void	join(long millis)
   * Waits at most millis milliseconds for this thread to die.
 * void	join(long millis, int nanos)
