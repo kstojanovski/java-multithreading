@@ -3,5 +3,5 @@ The motivation was to have mnemonic of the multithreading in Java with all keywo
 
 The content will be separated into few files:
 * Java keywords
-* Basic Object
+* Objects of low level mulithreading programing in Java
 * etc.
