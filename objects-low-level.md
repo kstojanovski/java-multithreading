@@ -56,5 +56,19 @@ Derivate class on this interface include:
   * Interrupts this thread.
 * static boolean interrupted()
   * Tests whether the current thread has been interrupted.
+* boolean	isInterrupted()
+  * Tests whether this thread has been interrupted.
+* void	setPriority(int newPriority)  
+  * Changes the priority of this thread.
+* void	setName(String name)
+  * Changes the name of this thread to be equal to the argument name.
+* void	setDaemon(boolean on)
+  * Marks this thread as either a daemon thread or a user thread.
+* Thread.State	getState()
+  * Returns the state of this thread.
+* static void	setDefaultUncaughtExceptionHandler(Thread.UncaughtExceptionHandler eh)
+  * Set the default handler invoked when a thread abruptly terminates due to an uncaught exception, and no other handler has been defined for that thread.
+* void	setContextClassLoader(ClassLoader cl)
+  * Sets the context ClassLoader for this Thread.
 ### Sources
 * https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html
