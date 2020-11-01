@@ -4,6 +4,7 @@ The content will be separated into few files:
 * Java keywords
 * Objects of low level mulithreading programing in Java
 * etc.
+
 Sources which this is based on are:
 * https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
 * https://www.baeldung.com/java-concurrency
