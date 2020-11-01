@@ -61,6 +61,7 @@ Derivate class on this interface include:
   * Tests whether this thread has been interrupted.
 * void	setPriority(int newPriority)  
   * Changes the priority of this thread.
+    * The priorities are platform dependent, means they behave differenty on diffrent platforms.
 * void	setName(String name)
   * Changes the name of this thread to be equal to the argument name.
 * void	setDaemon(boolean on)
