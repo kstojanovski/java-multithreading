@@ -56,6 +56,7 @@ Derivate class on this interface include:
   * Interrupts this thread.
 * static boolean interrupted()
   * Tests whether the current thread has been interrupted.
+    * From the java docs - the interrupted status of the thread is cleared by this method! This leads to confusion, therefore I would suggest the other method to be used for checking purposes.
 * boolean	isInterrupted()
   * Tests whether this thread has been interrupted.
 * void	setPriority(int newPriority)  
