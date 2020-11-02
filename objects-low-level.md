@@ -41,9 +41,11 @@ Derivate class on this interface include:
 * static void yield()
   * A hint to the scheduler that the current thread is willing to yield its current use of a processor.
     * Thread which is using this method gives advantage in the processing to the other threads but it doesnt stops!
+    * https://www.tutorialspoint.com/java/lang/thread_yield.htm
 * void join()
   * Waits for this thread to die.
-    * The current thread where `t.join` (`t` for some thread object reference) is invoked waits for the thread (for the process which was started in the run method) `t` to finish.  
+    * The current thread where `t.join` (`t` for some thread object reference) is invoked waits for the thread (for the process which was started in the run method) `t` to finish.
+    * https://www.tutorialspoint.com/java/lang/thread_join.htm
 * void	join(long millis)
   * Waits at most millis milliseconds for this thread to die.
 * void	join(long millis, int nanos)
@@ -57,11 +59,13 @@ Derivate class on this interface include:
 * static boolean interrupted()
   * Tests whether the current thread has been interrupted.
     * From the java docs - the interrupted status of the thread is cleared by this method! This leads to confusion, therefore I would suggest the other method to be used for checking purposes.
+    * https://www.tutorialspoint.com/javaexamples/thread_interrupt.htm
 * boolean	isInterrupted()
   * Tests whether this thread has been interrupted.
 * void	setPriority(int newPriority)  
   * Changes the priority of this thread.
     * The priorities are platform dependent, means they behave differenty on diffrent platforms.
+    * https://www.tutorialspoint.com/java-thread-priority-in-multithreading
 * void	setName(String name)
   * Changes the name of this thread to be equal to the argument name.
 * void	setDaemon(boolean on)
