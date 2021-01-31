@@ -1,7 +1,7 @@
 # Objects of low level mulithreading programing in Java
 ## Introduction
 In this section all objects are involed which are an part of the low level mulithreading programing in Java.
-## Object
+## java.lang.Object
 ### Introduction
 The object class which is the parent of any othe class in java
 ### Structure
@@ -18,21 +18,29 @@ In multithreading context the following methods are used:
   * Wakes up all threads that are waiting on this object's monitor.
 ### Sources
 * https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
-## Runnable
+## java.lang.Runnable
 ### Introduction
 * Type: Interface
+* The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. 
+* The class must define a method of no arguments called run.
+* This interface is designed to provide a common protocol for objects that wish to execute code while they are active. For example, Runnable is implemented by class Thread. Being active simply means that a thread has been started and has not yet been stopped.
+* In addition, Runnable provides the means for a class to be active while not subclassing Thread. A class that implements Runnable can run without subclassing Thread by instantiating a Thread instance and passing itself in as the target. In most cases, the Runnable interface should be used if you are only planning to override the run() method and no other Thread methods. This is important because classes should not be subclassed unless the programmer intends on modifying or enhancing the fundamental behavior of the class.
 ### Structure
-* run
+* void run()
+  * When an object implementing interface Runnable is used to create a thread, starting the thread causes the object's run method to be called in that separately executing thread.
 ### Note
-Derivate class on this interface include:
-* Thread
-* TimerTask
-* etc.
+Derivate class on this interface:
+* AsyncBoxView.ChildState, ForkJoinWorkerThread, FutureTask, RenderableImageProducer, SwingWorker, Thread, TimerTask.
 ### Sources
 * https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html
-## Thread
+## java.lang.Thread
 ### Introduction
-* Type: Class start
+* Type: Class
+* A thread is a thread of execution in a program. The Java Virtual Machine allows an application to have multiple threads of execution running concurrently.
+* Every thread has a priority. Threads with higher priority are executed in preference to threads with lower priority. Each thread may or may not also be marked as a daemon. When code running in some thread creates a new Thread object, the new thread has its priority initially set equal to the priority of the creating thread, and is a daemon thread if and only if the creating thread is a daemon.
+* When a Java Virtual Machine starts up, there is usually a single non-daemon thread (which typically calls the method named main of some designated class). The Java Virtual Machine continues to execute threads until either of the following occurs:
+  * The exit method of class Runtime has been called and the security manager has permitted the exit operation to take place.
+  * All threads that are not daemon threads have died, either by returning from the call to the run method or by throwing an exception that propagates beyond the run method.
 ### Structure
 * void start()
   * Causes this thread to begin execution; the Java Virtual Machine calls the run method of this thread.
@@ -78,3 +86,25 @@ Derivate class on this interface include:
   * Sets the context ClassLoader for this Thread.
 ### Sources
 * https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html
+## java.lang.ThreadLocal
+### Introduction
+* Type: Class
+* This class provides thread-local variables.
+* These variables differ from their normal counterparts in that each thread that accesses one (via its get or set method) has its own, independently initialized copy of the variable.
+* ThreadLocal instances are typically private static fields in classes that wish to associate state with a thread.
+* Each thread holds an implicit reference to its copy of a thread-local variable as long as the thread is alive and the ThreadLocal instance is accessible; after a thread goes away, all of its copies of thread-local instances are subject to garbage collection (unless other references to these copies exist).
+   * Each thread has is accessing own copy of the variable, means each thread has own variable even if the syntax does not show that explicitly.
+* **Note**: Shouldn't be abused as storage and should be used as less as possible because of memory reasons. Creating an high amount of threads multiplies the memory allocation. 
+### Structure
+* T	get()
+  * Returns the value in the current thread's copy of this thread-local variable.
+* protected T	initialValue()
+  * Returns the current thread's "initial value" for this thread-local variable.
+* void	remove()
+  * Removes the current thread's value for this thread-local variable.
+* void	set(T value)
+  * Sets the current thread's copy of this thread-local variable to the specified value.
+* static \<S\> ThreadLocal\<S\>	withInitial(Supplier<? extends S> supplier)
+  * Creates a thread local variable.
+### Sources
+* https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html
