@@ -11,6 +11,9 @@ The idea of the atomic vriable is to garantee atomicity, means changing the stat
 
 Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/package-summary.html
 
+## Notes
+* Atomic*.lazySet - is a performance win for single writers (volatile mode).
+
 ## Atomic single variables
 In this group following classes belong:
 * AtomicBoolean
