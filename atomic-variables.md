@@ -48,7 +48,11 @@ Examples: https://www.logicbig.com/tutorials/core-java-tutorial/java-multi-threa
 ## Atomic special reference variables
 In this group following classes belong:
 * AtomicMarkableReference\<V\>
+  * Example: https://www.logicbig.com/tutorials/core-java-tutorial/java-multi-threading/atomic-markable-reference.html
+  * Example: https://www.baeldung.com/java-atomicmarkablereference
 * AtomicStampedReference\<V\>
+  * Example: https://www.logicbig.com/tutorials/core-java-tutorial/java-multi-threading/atomic-stamped-reference.html
+  * Example: https://www.baeldung.com/java-atomicstampedreference
 
 ## Accumulators
 In this group following classes belong:
