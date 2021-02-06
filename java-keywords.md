@@ -7,7 +7,7 @@
 * Not to use: when more than one thread is writing into the variable.
 * To use: when only one thread is writing but meany are reading.
 * Happens-Before Ordering is used on volatile keywords.
-** On writing: All other varibles of the method set iwth new values before the setting the volatile value are memorized, which means on reading the volatile it is 100% for sure that the other varibles have also the newest state.
+** On writing: All other varibles of the method set with new values before the setting the volatile value are memorized, which means on reading the volatile it is 100% for sure that the other varibles have also the newest state.
 ### Sources
 * https://www.baeldung.com/java-volatile
 * http://tutorials.jenkov.com/java-concurrency/volatile.html
