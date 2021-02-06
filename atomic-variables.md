@@ -14,15 +14,22 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic
 ## Atomic single variables
 In this group following classes belong:
 * AtomicBoolean
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomicboolean.htm
 * AtomicInteger
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomic_integer.htm
 * AtomicLong
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomiclong.htm 
 * AtomicReference\<V\>
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomicreference.htm
 
 ## Atomic list variables
 In this group following classes belong:
 * AtomicIntegerArray
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomicintegerarray.htm
 * AtomicLongArray
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomiclongarray.htm
 * AtomicReferenceArray\<E\>
+  * Example: https://www.tutorialspoint.com/java_concurrency/concurrency_atomicreferencearray.htm
 
 ## Atomic field updaters
 In this group following classes belong:
