@@ -43,6 +43,8 @@ In this group following classes belong:
 * AtomicLongFieldUpdater\<T\>
 * AtomicReferenceFieldUpdater\<T,V\>
 
+Examples: https://www.logicbig.com/tutorials/core-java-tutorial/java-multi-threading/atomic-field-updater.html
+
 ## Atomic special reference variables
 In this group following classes belong:
 * AtomicMarkableReference\<V\>
