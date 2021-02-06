@@ -13,6 +13,9 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic
 
 ## Notes
 * Atomic*.lazySet - is a performance win for single writers (volatile mode).
+  * Reference: https://psy-lob-saw.blogspot.com/2012/12/atomiclazyset-is-performance-win-for.html
+* Atomic*.weakCompareAndSet - weakCompareAndSet is not a good choice for implementing locks, semaphores, initialization flags. It does not provide ordering guarantees (volatile mode).
+  * Reference: http://jsr166-concurrency.10961.n7.nabble.com/AtomicReference-weakCompareAndSet-quot-May-fail-spuriously-quot-td918.html
 
 ## Atomic single variables
 In this group following classes belong:
