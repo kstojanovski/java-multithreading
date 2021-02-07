@@ -55,13 +55,15 @@ In this group following classes belong:
   * Example: https://www.baeldung.com/java-atomicstampedreference
 
 ## Accumulators
-* This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+
 In this group following classes belong:
 * DoubleAccumulator
 * LongAccumulator
 
 ## Adders
-* This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+
 In this group following classes belong:
 * DoubleAdder
 * LongAdder
