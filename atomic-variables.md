@@ -56,17 +56,27 @@ In this group following classes belong:
 
 ## Accumulators
 This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+The order of accumulation within or across threads is not guaranteed and cannot be depended upon, so this class is only applicable to functions for which the order of accumulation does not matter.
 
 In this group following classes belong:
 * DoubleAccumulator
+  * Example: https://www.geeksforgeeks.org/doubleaccumulator-get-method-in-java-with-examples/
+  * Example: https://www.geeksforgeeks.org/doubleaccumulator-doublevalue-method-in-java-with-examples/ 
 * LongAccumulator
+  * Example: https://www.geeksforgeeks.org/doubleadder-doublevalue-method-in-java-with-examples/
+  * Example: https://www.geeksforgeeks.org/doubleadder-sum-method-in-java-with-examples/
 
 ## Adders
 This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
+The order of accumulation within or across threads is not guaranteed and cannot be depended upon, so this class is only applicable to functions for which the order of accumulation does not matter.
 
 In this group following classes belong:
 * DoubleAdder
+  * Example: https://www.geeksforgeeks.org/longaccumulator-accumulate-method-in-java-with-examples/
+  * Example: https://www.geeksforgeeks.org/longaccumulator-get-method-in-java-with-examples/
 * LongAdder
+  * Example: https://www.geeksforgeeks.org/longadder-sum-method-in-java-with-examples/
+  * Example: https://www.baeldung.com/java-longadder-and-longaccumulator
 
 
 
