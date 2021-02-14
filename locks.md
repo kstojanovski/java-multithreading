@@ -28,7 +28,8 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### ReadWriteLock
 * java.util.concurrent.locks.ReadWriteLock
-
+  * has a java.util.concurrent.locks.Lock
+  
 ## Class Group
 
 ### LockSupport
