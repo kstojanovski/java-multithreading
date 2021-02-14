@@ -21,16 +21,20 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 ### Condition
 * java.util.concurrent.locks.Condition
 * Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Condition.html
+* This interface is used in the Lock Interface.
 
 ### Lock
 * java.util.concurrent.locks.Lock
   * has a java.util.concurrent.locks.Condition
 * Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Lock.html
+* This interface is used in the classes ReentrantLock and StampedLock.
 
 ### ReadWriteLock
 * java.util.concurrent.locks.ReadWriteLock
   * has a java.util.concurrent.locks.Lock
-  
+* Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReadWriteLock.html
+* This interface is used in the classes ReentrantReadWriteLock and StampedLock.
+
 ## Class Group
 
 ### LockSupport
@@ -38,8 +42,7 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### ReentrantLock
 * java.util.concurrent.locks.ReentrantLock
-  * is a java.util.concurrent.locks.Lock
-  * has a java.util.concurrent.locks.Condition
+  * is a java.util.concurrent.locks.Lock (has a java.util.concurrent.locks.Condition)
 
 ### ReentrantReadWriteLock
 * java.util.concurrent.locks.ReentrantReadWriteLock
@@ -49,7 +52,8 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### StampedLock
 * Class: java.util.concurrent.locks.StampedLock
-  * has a java.util.concurrent.locks.Lock
+  * has a java.util.concurrent.locks.Lock (has a java.util.concurrent.locks.Condition)
+  * has a java.util.concurrent.locks.ReadWriteLock
 
 ### Synchronizer
 * java.util.concurrent.AbstractOwnableSynchronizer
