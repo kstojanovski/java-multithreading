@@ -5,7 +5,7 @@ The content will be separated into few files:
 * [Objects of low level mulithreading programing in Java](./objects-low-level.md)
 * [Implicit thread-safe objects](./implicit-thread-safe-objects.md)
 * [Atomic variables](./atomic-variables.md)
-* Locks
+* [Locks](./locks.md)
 * Concurrent objects
   * Collections
   * Executors
