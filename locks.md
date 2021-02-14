@@ -20,6 +20,7 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### Condition
 * java.util.concurrent.locks.Condition
+* Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Condition.html
 
 ### Lock
 * java.util.concurrent.locks.Lock
