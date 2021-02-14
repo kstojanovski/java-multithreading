@@ -24,6 +24,7 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### Lock
 * java.util.concurrent.locks.Lock
+  * has a java.util.concurrent.locks.Condition
 
 ### ReadWriteLock
 * java.util.concurrent.locks.ReadWriteLock
