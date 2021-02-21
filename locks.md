@@ -39,6 +39,14 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 
 ### LockSupport
 * java.util.concurrent.locks.LockSupport
+* Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/LockSupport.html
+* On given thread "permits" are used which are set and get with park() and unpark() and managed in the sense of the Semaphore class.
+* This approach should not be used on threads with code where locking and blocking are used.
+* Since the permit approach works on related threads, it is not flexible as the approach with blocking and locking where relation to the threads is irrelevant, therefore not useful for most concurrency control applications. 
+* For manging the threads some concurrency collection can be used like ConcurrentLinkedQueue.
+* Discussions:
+  * https://stackoverflow.com/questions/37789051/why-is-locksupport-provided-by-java-but-not-useful
+  * https://stackoverflow.com/questions/39415636/can-locksupport-park-replace-object-wait 
 
 ### ReentrantLock
 * java.util.concurrent.locks.ReentrantLock
