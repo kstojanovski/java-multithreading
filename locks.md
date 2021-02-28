@@ -51,6 +51,23 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 ### ReentrantLock
 * java.util.concurrent.locks.ReentrantLock
   * is a java.util.concurrent.locks.Lock (has a java.util.concurrent.locks.Condition)
+* Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html
+* ReentrantLock doesn't means it behaved differently from instrict lock but with the extended capabilites it is possible to implement reentrance. 
+* The name ReentrantLock is misleading and it shoule be called AdvancedLock.
+* Reasons why ReentrantLock exists:
+  * Polled and Timed Lock Acquisition - the methods tryLock() and unlock() are used here.
+  * Interruptible Lock Acquisition - can be implemented with lockInterruptibly().
+  * Non-block Structured Locking - no need to be aquired and released in the same code block. Using this techinquie as Lock Strapping in ConcurrentHashMap which has 16 lock on it.
+  * Fairness - through paremter in the constructor. Fairness means locks favor granting access to the longest-waiting thread for but this is not meant of thread scheduling.
+* ReentrantLock should be used when the advance features are needed: timed, polled or interruptible lock aquisition, fair queueing or non-block-structured locking. Otherwise synchronized (intristics locking) is prefered.
+* Examples:
+  * https://dzone.com/articles/what-are-reentrant-locks
+  * https://javarevisited.blogspot.com/2013/03/reentrantlock-example-in-java-synchronized-difference-vs-lock.html#axzz6nmsBwnaK
+  * https://www.netjstech.com/2016/02/difference-between-reentrantlock-and-synchronized-java.html
+  * https://www.netjstech.com/2016/05/lock-striping-in-java-concurrency.html?showComment=1541399122082&m=0  
+* Controversy:
+  * Several stackoverflow discussions and also some tutorial sites are mentioning that the reentrant locking is ReentrantLock exclusive feature.
+    * But the instristic locks also have this behavour - Book Java concurerncy in practice, Chapter 2.3.2.
 
 ### ReentrantReadWriteLock
 * java.util.concurrent.locks.ReentrantReadWriteLock
