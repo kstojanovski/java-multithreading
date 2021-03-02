@@ -13,9 +13,10 @@
 * http://tutorials.jenkov.com/java-concurrency/volatile.html
 ## Keyword - synchronized
 ### Notes
-* The synchronized keyword can be used on static methods, non static method and in a mthod as static block.
-* It block the execution of the code part for any other thread that the one which owns the object lock. Default is
-** this on non static code part.
-** class-object on static code part.
+* The synchronized keyword can be used on static methods, non static method and in a method as static block.
+* It blocks the execution of the code-part for any other thread that the one which owns the object lock. Usually used is:
+  * this on non static code.
+  * class-object on static code.
+* The lock object reference should be final becasue assigning new object to the lock object means using another lock and the next incoming thread won't be blocked.
 ## Sources
 * https://www.baeldung.com/java-synchronized
