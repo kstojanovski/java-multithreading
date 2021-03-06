@@ -74,6 +74,15 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
   * is a java.util.concurrent.locks.ReadWriteLock
 * java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock
 * java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock
+* Reference and Examples: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html
+* The ReadWriteLock interface similarly defines locks that may be shared among readers but are exclusive to writers.
+* This class has the following properties:
+  * Acquisition order
+  * Reentrancy
+  * Lock downgrading
+  * Interruption of lock acquisition
+  * Condition support
+  * Instrumentation
 
 ### StampedLock
 * Class: java.util.concurrent.locks.StampedLock
