@@ -83,6 +83,7 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
   * Interruption of lock acquisition
   * Condition support
   * Instrumentation
+* The explanations and the examples from the class-java-doc give much information about this class and the use cases where it can be used. Because the purpose of it existence is clear and concrete thouse information are more than ehough to understand the ReentrantReadWriteLock.
 
 ### StampedLock
 * Class: java.util.concurrent.locks.StampedLock
