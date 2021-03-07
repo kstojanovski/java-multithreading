@@ -89,6 +89,16 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 * Class: java.util.concurrent.locks.StampedLock
   * has a java.util.concurrent.locks.Lock (has a java.util.concurrent.locks.Condition)
   * has a java.util.concurrent.locks.ReadWriteLock
+* Reference and Examples: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/StampedLock.html
+* The StampedLock can be seen as improvement over the ReentrantReadWriteLock. It has not the startvation problem of the ReentrantReadWriteLock when many writers are operating on the shared data while the readers are waiting.
+* It does not support reentrance, but can "simulate" it by using the stamps.
+* Writer locks doesn't have advantage over the read locks.
+* Optimistic locking is very recommented to be used.
+* Better performance over the ReentrantReadWriteLock.
+* Documentation and Examples:
+  * http://javaspecialists.eu/talks/jfokus13/PhaserAndStampedLock.pdf
+  * https://dzone.com/articles/a-look-at-stampedlock
+  * https://www.netjstech.com/2016/08/stampedlock-in-java.html
 
 ### Synchronizer
 * java.util.concurrent.AbstractOwnableSynchronizer
