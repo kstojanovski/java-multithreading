@@ -10,7 +10,7 @@ The content will be separated into few files:
   * Collections
   * Executors
   * Futures
-  * Diverse multithreading processors
+  * Diverse multithreading approaches
 * Streams
 * Patterns
 
