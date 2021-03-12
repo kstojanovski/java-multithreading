@@ -11,8 +11,8 @@ The content will be separated into few files:
   * Executors
   * Futures
   * Diverse multithreading processors
-* Patterns
 * Streams
+* Patterns
 
 Sources which this is based on are:
 * https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
