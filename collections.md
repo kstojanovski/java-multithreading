@@ -11,15 +11,16 @@ Particular collections are thread safe. They can be separated in several groups:
   * ConcurrentHashMap.KeySetView
   * ConcurrentSkipListMap
 * Queues
-  * ArrayBlockingQueue
   * ConcurrentLinkedQueue
-  * DelayQueue
+  * ConcurrentLinkedDeque
+* Blocking Queues
+  * ArrayBlockingQueue  
   * LinkedBlockingQueue
   * PriorityBlockingQueue
   * SynchronousQueue
-  * LinkedBlockingDeque
-  * ConcurrentLinkedDeque
   * LinkedTransferQueue
+  * DelayQueue 
+  * LinkedBlockingDeque 
 
 ## Sets
 ### CopyOnWriteArraySet
@@ -50,12 +51,47 @@ Particular collections are thread safe. They can be separated in several groups:
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html
 * A thread-safe variant of TreeMap.
 ## Queues
-### ArrayBlockingQueue
 ### ConcurrentLinkedQueue
-### DelayQueue
-### LinkedBlockingQueue
-### PriorityBlockingQueue
-### SynchronousQueue
-### LinkedBlockingDeque
+* java.util.concurrent.ConcurrentLinkedQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html 
+* A thread-safe implementation of LinkedQueue.
 ### ConcurrentLinkedDeque
+* java.util.concurrent.ConcurrentLinkedDeque
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedDeque.html
+* An unbounded concurrent deque based on linked nodes. 
+* Concurrent insertion, removal, and access operations execute safely across multiple threads.
+## Blocking Queues
+### ArrayBlockingQueue  
+* java.util.concurrent.ArrayBlockingQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html
+* A bounded blocking queue backed by an array. 
+* This queue orders elements FIFO (first-in-first-out). 
+* This is a classic "bounded buffer", in which a fixed-sized array holds elements inserted by producers and extracted by consumers. Once created, the capacity cannot be changed. Attempts to put an element into a full queue will result in the operation blocking; attempts to take an element from an empty queue will similarly block.
+### LinkedBlockingQueue
+* java.util.concurrent.LinkedBlockingQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html
+* An optionally-bounded blocking queue based on linked nodes. 
+* This queue orders elements FIFO (first-in-first-out). 
+* Linked queues typically have higher throughput than array-based queues but less predictable performance in most concurrent applications.
+### PriorityBlockingQueue
+* java.util.concurrent.PriorityBlockingQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html
+* A thread-safe variant of PriorityQueue.
+* A priority queue relying on natural ordering also does not permit insertion of non-comparable objects (doing so results in ClassCastException).
+### SynchronousQueue
+* java.util.concurrent.SynchronousQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html
+* A blocking queue in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa.
 ### LinkedTransferQueue
+* java.util.concurrent.LinkedTransferQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedTransferQueue.html
+* A BlockingQueue in which producers may wait for consumers to receive elements.
+### DelayQueue
+* java.util.concurrent.DelayQueue
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/DelayQueue.html
+* An unbounded blocking queue of Delayed elements, in which an element can only be taken when its delay has expired. 
+### LinkedBlockingDeque
+* java.util.concurrent.LinkedBlockingDeque
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html
+* An optionally-bounded blocking deque based on linked nodes of of delayed elements.
+
