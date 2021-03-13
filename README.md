@@ -11,7 +11,7 @@ The content will be separated into few files:
   * [Executors](./executors.md)
   * [Futures](./futures.md)
   * [Multithreading concepts](./multithreading-concepts.md)
-* Streams
+* [Streams](./streams.md)
 * [Patterns](./patterns.md)
 
 Sources which this is based on are:
