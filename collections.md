@@ -86,6 +86,7 @@ Particular collections are thread safe. They can be separated in several groups:
 * java.util.concurrent.LinkedTransferQueue
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedTransferQueue.html
 * A BlockingQueue in which producers may wait for consumers to receive elements.
+* It is based on the TransferQueue interface which means it uses the transfer methods to transfers the element to a consumer.
 ### DelayQueue
 * java.util.concurrent.DelayQueue
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/DelayQueue.html
