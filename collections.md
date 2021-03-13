@@ -6,6 +6,10 @@ Particular collections are thread safe. They can be separated in several groups:
   * ConcurrentSkipListSet
 * Lists
   * CopyOnWriteArrayList
+* Maps
+  * ConcurrentHashMap
+  * ConcurrentHashMap.KeySetView
+  * ConcurrentSkipListMap
 * Queues
   * ArrayBlockingQueue
   * ConcurrentLinkedQueue
@@ -16,16 +20,25 @@ Particular collections are thread safe. They can be separated in several groups:
   * LinkedBlockingDeque
   * ConcurrentLinkedDeque
   * LinkedTransferQueue
-* Maps
-  * ConcurrentHashMap
-  * ConcurrentHashMap.KeySetView
-  * ConcurrentSkipListMap
 
 ## Sets
 ### CopyOnWriteArraySet
+* java.util.concurrent.CopyOnWriteArraySet
+* Reference and Examples: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArraySet.html
+* A thread-safe variant of HashSet.
 ### ConcurrentSkipListSet
+* java.util.concurrent.ConcurrentSkipListSet
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html
+* A thread-safe variant of TreeSet.
 ## Lists
 ### CopyOnWriteArrayList
+* java.util.concurrent.CopyOnWriteArrayList
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html 
+* A thread-safe variant of ArrayList.
+## Maps
+### ConcurrentHashMap
+### ConcurrentHashMap.KeySetView
+### ConcurrentSkipListMap
 ## Queues
 ### ArrayBlockingQueue
 ### ConcurrentLinkedQueue
@@ -36,7 +49,3 @@ Particular collections are thread safe. They can be separated in several groups:
 ### LinkedBlockingDeque
 ### ConcurrentLinkedDeque
 ### LinkedTransferQueue
-## Maps
-### ConcurrentHashMap
-### ConcurrentHashMap.KeySetView
-### ConcurrentSkipListMap
