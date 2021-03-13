@@ -8,7 +8,7 @@ The content will be separated into few files:
 * [Locks](./locks.md)
 * Concurrent objects
   * [Collections](./collections.md)
-  * Executors
+  * [Executors](./executors.md)
   * Futures
   * Diverse multithreading approaches
 * Streams
