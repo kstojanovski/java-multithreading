@@ -104,4 +104,10 @@ Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/
 * java.util.concurrent.AbstractOwnableSynchronizer
 * java.util.concurrent.AbstractQueuedLongSynchronizer is a java.util.concurrent.AbstractOwnableSynchronizer
 * java.util.concurrent.AbstractQueuedSynchronizer is a java.util.concurrent.AbstractOwnableSynchronizer
-
+* Reference and Example: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/AbstractQueuedSynchronizer.html
+* AbstractQueuedSynchronizer and AbstractQueuedLongSynchronizer are similar, the only difference is the type of the stored state whch is int in the AbstractQueuedSynchronizer and long in the AbstractQueuedLongSynchronizer.
+* This class is designed to be a useful basis for most kinds of synchronizers that rely on a single atomic int value to represent state.
+* It should be defined as subclass of the class which needs to be synchronized (See the example).
+* This class supports either or both, at the same time, a default exclusive mode and a shared mode. They share the same FIFO queue.
+* AbstractQueuedSynchronizer.ConditionObject is a Condition implementation for a AbstractQueuedSynchronizer serving as the basis of a Lock implementation.
+* Typical subclasses requiring serializability will define a readObject method that restores this to a known initial state upon deserialization.
