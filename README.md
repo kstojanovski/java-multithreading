@@ -9,7 +9,7 @@ The content will be separated into few files:
 * Concurrent objects
   * [Collections](./collections.md)
   * [Executors](./executors.md)
-  * Futures
+  * [Futures](./futures.md)
   * Diverse multithreading approaches
 * Streams
 * [Patterns](./patterns.md)
