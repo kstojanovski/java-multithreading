@@ -10,7 +10,7 @@ The content will be separated into few files:
   * [Collections](./collections.md)
   * [Executors](./executors.md)
   * [Futures](./futures.md)
-  * Multithreading concepts
+  * [Multithreading concepts](./multithreading-concepts.md)
 * Streams
 * [Patterns](./patterns.md)
 
