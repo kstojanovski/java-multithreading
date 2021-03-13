@@ -7,7 +7,7 @@ The content will be separated into few files:
 * [Atomic variables](./atomic-variables.md)
 * [Locks](./locks.md)
 * Concurrent objects
-  * Collections
+  * [Collections](./collections.md)
   * Executors
   * Futures
   * Diverse multithreading approaches
