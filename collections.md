@@ -1,0 +1,42 @@
+# Collections
+
+Particular collections are thread safe. They can be separated in several groups:
+* Sets
+  * CopyOnWriteArraySet
+  * ConcurrentSkipListSet
+* Lists
+  * CopyOnWriteArrayList
+* Queues
+  * ArrayBlockingQueue
+  * ConcurrentLinkedQueue
+  * DelayQueue
+  * LinkedBlockingQueue
+  * PriorityBlockingQueue
+  * SynchronousQueue
+  * LinkedBlockingDeque
+  * ConcurrentLinkedDeque
+  * LinkedTransferQueue
+* Maps
+  * ConcurrentHashMap
+  * ConcurrentHashMap.KeySetView
+  * ConcurrentSkipListMap
+
+## Sets
+### CopyOnWriteArraySet
+### ConcurrentSkipListSet
+## Lists
+### CopyOnWriteArrayList
+## Queues
+### ArrayBlockingQueue
+### ConcurrentLinkedQueue
+### DelayQueue
+### LinkedBlockingQueue
+### PriorityBlockingQueue
+### SynchronousQueue
+### LinkedBlockingDeque
+### ConcurrentLinkedDeque
+### LinkedTransferQueue
+## Maps
+### ConcurrentHashMap
+### ConcurrentHashMap.KeySetView
+### ConcurrentSkipListMap
