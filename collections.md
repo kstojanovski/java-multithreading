@@ -46,10 +46,12 @@ Particular collections are thread safe. They can be separated in several groups:
 * java.util.concurrent.ConcurrentHashMap.KeySetView
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.KeySetView.html
 * Collection of Key values pairs of a ConcurrentHashMap.
+* Example: https://www.geeksforgeeks.org/concurrentlinkedqueue-in-java-with-examples/
 ### ConcurrentSkipListMap
 * java.util.concurrent.ConcurrentSkipListMap
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html
 * A thread-safe variant of TreeMap.
+* Example: https://www.geeksforgeeks.org/concurrentlinkeddeque-in-java-with-examples/
 ## Queues
 ### ConcurrentLinkedQueue
 * java.util.concurrent.ConcurrentLinkedQueue
