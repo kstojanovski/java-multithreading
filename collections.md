@@ -106,7 +106,7 @@ Particular collections are thread safe. They can be separated in several groups:
 * A BlockingQueue in which producers may wait for consumers to receive elements.
 * It is based on the TransferQueue interface which means it uses the transfer methods to transfers the element to a consumer.
 * A transfer() waits for one or more recipient threads.
-* The threads where the LinkedTransferQueue is not finishing as long alelement are set with the transfer method on it.
+* The threads where the LinkedTransferQueue belongs is not finishing as long as elements are in the queue which are set with the transfer method.
 * Exampels: https://www.geeksforgeeks.org/linkedtransferqueue-in-java-with-examples/
 ### DelayQueue
 * java.util.concurrent.DelayQueue
