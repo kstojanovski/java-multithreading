@@ -96,5 +96,5 @@ Particular collections are thread safe. They can be separated in several groups:
 ### LinkedBlockingDeque
 * java.util.concurrent.LinkedBlockingDeque
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html
-* An optionally-bounded blocking deque based on linked nodes of of delayed elements.
+* An optionally-bounded blocking deque based on linked nodes.
 
