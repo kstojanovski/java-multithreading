@@ -1,6 +1,8 @@
 # Collections
 
 Particular collections are thread safe. They can be separated in several groups:
+* Collections
+  * Collections
 * Sets
   * CopyOnWriteArraySet
   * ConcurrentSkipListSet
@@ -21,6 +23,20 @@ Particular collections are thread safe. They can be separated in several groups:
   * LinkedTransferQueue
   * DelayQueue 
   * LinkedBlockingDeque 
+
+## Collections
+### Collections
+* java.util.concurrent.Collections
+* Reference: https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html
+* This class has many methods to transform not thread safe collection into thread-safe one:
+  * synchronizedCollection - Returns thread-safe Collection.
+  * synchronizedList - Returns thread-safe List.
+  * synchronizedSet - Returns thread-safe Set.
+  * synchronizedSortedSet - Returns thread-safe Sorted Set.
+  * synchronizedNavigableSet - Returns thread-safe Navigable Set.
+  * synchronizedMap - Returns thread-safe Map.
+  * synchronizedNavigableMap - Returns thread-safe Navigable Map.
+  * synchronizedSortedMap - Returns thread-safe Sorted Map.
 
 ## Sets
 ### CopyOnWriteArraySet
