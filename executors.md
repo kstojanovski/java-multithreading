@@ -45,6 +45,8 @@ Follwing classes belog to this type:
 * Reference: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html
 * An ExecutorService for running ForkJoinTasks. 
 * A ForkJoinPool provides the entry point for submissions from non-ForkJoinTask clients, as well as management and monitoring operations.
+* Tutorial
+  * https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html
 * Examples:
   * https://www.javatpoint.com/java-forkjoinpool
   * https://java-8-tips.readthedocs.io/en/stable/forkjoin.html
