@@ -33,7 +33,9 @@ High-Level API implementation. This pattern is implemented with BlockingQueue wh
 
 ## Distributed Locking
 
-This kind of pattern is needed when you have different groups of threads which are bound to one lock. One use case is when many requests are inbound through in a HTTPServlet but the requests contain parameters which can be seen as unique id and only one of them should run a particular piece of code while the other requests with the same id should wait.
+This kind of pattern is needed when you have different groups of threads which are bound to one lock. 
+
+Through a HTTPServlet many requests inbound and contain parameters which can be distilled as unique id, means the incoming request can be grouped by thouse ids. But only one request of a group should run a particular piece of code while the other requests with the same id should wait. This can be relaized only by manging multiple locks, each lock presenting an group of threads. I call this approach Distributed Locking.
 
 This approach is a candidate for an extra implementation as part of the of the concurrency package.
 
