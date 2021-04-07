@@ -34,6 +34,7 @@ Follwing classes belog to this type:
 * java.util.concurrent.ExecutorCompletionService
 * Reference and Examples: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorCompletionService.html
 * A CompletionService that uses a supplied Executor to execute tasks.
+* It combines the functionallity of an Executor and BlockingQueue.
 
 ### AbstractExecutorService
 * java.util.concurrent.AbstractExecutorService
